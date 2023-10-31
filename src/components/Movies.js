@@ -3,7 +3,7 @@ import { movies } from '../data';
 
 function Movies() {
   const movieList = movies.map((movie, index) => (
-    <div key={index}>
+    <li key={index}>
       <h2>{movie.title}</h2>
       <p>Time: {movie.time}</p>
       <ul>
@@ -11,13 +11,15 @@ function Movies() {
           <li key={i}>{genre}</li>
         ))}
       </ul>
-    </div>
+    </li>
   ));
 
   return (
     <div>
       <h1>Movies Page</h1>
-      {movieList}
+      <ul>
+        {movieList}
+      </ul>
     </div>
   );
 }

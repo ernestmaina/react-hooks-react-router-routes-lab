@@ -13,6 +13,9 @@ function NavBar() {
       <li>
         <NavLink to="/actors">Actors</NavLink>
       </li>
+      <li>
+        <NavLink to="/directors">Directors</NavLink>
+      </li>
     </ul>
   );
 }
